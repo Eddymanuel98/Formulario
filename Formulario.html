@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset ="UTF-8">
+        <meta name ="viewport" content ="width=device-width, initial-scale=1.0">
+        <title>Encuesta al Usuario</title>
+        <script src ="./Formulario.js"></script>
+        <link rel ="stylesheet" href ="./Style.css">
+    </head>
+    <body>
+        <h1>Encuesta al Usuario</h1>
+        <form id ="Formulario" action ="/sumit-url" method ="post">
+            <div id="datosPersonales">
+                <h3>Ingresa tus datos personales</h3>
+                <label for ="Name">Nombres:</label>
+                <input required type ="text" id ="Name">
+                <br>
+                <label for ="Apellidos">Apellidos:</label>
+                <input required type ="text" id ="Apellidos">
+                <br>
+                <label for ="Edad">Edad:</label>
+                <input required type ="number" id ="Edad" min ="18" max ="90" placeholder ="18-90">
+                <br>
+                <label for ="Genero">Genero:</label>
+                <select name ="Genero" id ="Genero">
+                    <option value ="Masculino">Masculino</option>
+                    <option value ="Femenino">Femenino</option>
+                    <option value ="Otro">Otro</option>
+                </select>
+                <br>
+                <label for ="Correo">Correo:</label>
+                <input required type ="email" id="Correo" placeholder= ="ejemplo@gmail.com">
+                <br>
+                <label for ="Telefono">Telefono:</label>
+                <input required type ="number" id ="Telefono" placeholder= ="+55(11)123456789">
+                <br>
+                <p>Acepta usted que sus datos sean utilizados por terceros?</p>
+                <input type ="radio" id ="siAcepta" name ="aceptar" checked>
+                <label for ="siAcepta">Si</label>
+                <br>
+                <input type ="radio" id ="noAcepta" name ="aceptar">
+                <label for ="noAcepta">No</label>
+                <br>
+                <p>Terminos y condiciones</p>
+                <input required type ="checkbox" id ="Terminos">
+                <label for ="Terminos">Al seleccionar esta casilla estas de acuerdo con nuestros <a href ="AQUI VA EL LINK">terminos y condiciones</a></label>
+                <button id ="botonSiguiente1">Siguiente</button>
+            </div>
+           <div id="divUltimosJuegosJugados">
+             <h3>Selecciona de la siguiente lista los juegos que hayas jugado</h3>
+             <ol id="listaDeUltimosJuegosJugados">
+                <li id="juego1">
+                    <input type="checkbox" name="" id="game1">
+                    <label for="game1">Elden Ring</label></input>
+                </li>
+                <li id="juego2">
+                    <input type="checkbox" name="" id="game2">
+                    <label for="game2">Sekiro</label></input>
+                </li>
+                <li id="juego3">
+                    <input type="checkbox" name="" id="game3">
+                    <label for="game3">Dark Souls III</label></input>
+                </li>
+                <li id="juego4">
+                    <input type="checkbox" name="" id="game4">
+                    <label for="game4">The Witcher 3</label></input>
+                </li>
+                <li id="juego5">
+                    <input type="checkbox" name="" id="game5">
+                    <label for="game5">GTA 5</label></input>
+                </li>
+                <li id="juego6">
+                    <input type="checkbox" name="" id="game6">
+                    <label for="game6">Red Dead Redemption II</label></input>
+                </li>
+                <li id="juego7">
+                    <input type="checkbox" name="" id="game7">
+                    <label for="game7">Hollow Knight</label></input>
+                </li>
+                <li id="juego8">
+                    <input type="checkbox" name="" id="game8">
+                    <label for="game8">Assassins Creed Mirage</label></input>
+                </li>
+                <li id="juego9">
+                    <input type="checkbox" name="" id="game9">
+                    <label for="game9">The Last of Us</label></input>
+                </li>
+                <li id="juego10">
+                    <input type="checkbox" name="" id="game10">
+                    <label for="game10">Star Blade</label></input>
+                </li>
+             </ol>
+             <button id ="botonSiguiente2">Siguiente</button>
+           </div>
+           <br>
+           <div id="divJuegosQuePlaneesJugar">
+             <h3>Selecciona de la siguiente lista los juegos que tengas planeado jugar en el futuro</h3>
+             <ol id="listaDeUltimosJuegosJugados">
+                <li id="juego1">
+                    <input type="checkbox" name="" id="game11">
+                    <label for="game11">Elden Ring (Nightrealm DLC)</label></input>
+                </li>
+                <li id="juego2">
+                    <input type="checkbox" name="" id="game12">
+                    <label for="game12">Ghost of Yotei</label></input>
+                </li>
+                <li id="juego3">
+                    <input type="checkbox" name="" id="game13">
+                    <label for="game13">Star Blade DLC</label></input>
+                </li>
+                <li id="juego4">
+                    <input type="checkbox" name="" id="game14">
+                    <label for="game14">The Witcher 4</label></input>
+                </li>
+                <li id="juego5">
+                    <input type="checkbox" name="" id="game15">
+                    <label for="game15">GTA 6</label></input>
+                </li>
+                <li id="juego6">
+                    <input type="checkbox" name="" id="game16">
+                    <label for="game16">Marvel Rivals</label></input>
+                </li>
+                <li id="juego7">
+                    <input type="checkbox" name="" id="game17">
+                    <label for="game17">Hollow Knight Silk Song</label></input>
+                </li>
+                <li id="juego8">
+                    <input type="checkbox" name="" id="game18">
+                    <label for="game18">Assassins Creed Shadows</label></input>
+                </li>
+                <li id="juego9">
+                    <input type="checkbox" name="" id="game19">
+                    <label for="game19">Tomb Raider IV, V, VI Remastered</label></input>
+                </li>
+                <li id="juego10">
+                    <input type="checkbox" name="" id="game20">
+                    <label for="game20">Subnautica 2</label></input>
+                </li>
+             </ol>
+             <button id ="botonSiguiente3">Siguiente</button>
+           </div>
+           <br>
+           <div id="divJuegoFavorito">
+                <h3>Selecciona, de los juegos que hayas jugado, tu favorito</h3>
+                <fieldset>   
+                    <legend>Selecciona</legend>
+                    <select name="" id="seleccionaElFavorito">
+                        <option value="eldenRing">Elden Ring</option>
+                        <option value="sekiro">Sekiro</option>
+                        <option value="darkSouls3">Dark Souls III</option>
+                        <option value="theWitcher3">The Witcher 3"</option>
+                        <option value="gta5">GTA 5</option>
+                        <option value="redDead2">Red Dead Redemption II</option>
+                        <option value="hollowKnight">Hollow Knight</option>
+                        <option value="mirage">Assassins Creed Mirage</option>
+                        <option value="theLastOfUs">The Last of Us</option>
+                        <option value="stelarBlade">Stelar Blade</option>
+                    </select>
+                    <br>
+                    <h3>Escribe las razones por las que has seleccionado ese juego</h3>
+                    <textarea rows ="6" cols ="70" placeholder ="Explica tu seleccion"></textarea>
+                </fieldset> 
+                <br>
+                <button id ="botonSiguiente4">Siguiente</button>
+           </div>
+           <br>
+           <div id="divJuegosAnime">
+            <h3>Has jugado algun juego con tematica anime?</h3>
+            <input type="radio" id="siAnime" name="anime">
+            <label for="siAnime">Si</label>
+            <br>
+            <input type="radio" id="noAnime" name="anime" checked>
+            <label for="noAnime">No</label>
+            <br>
+            <!-- En caso de responder que si se desoculta este div para que seleccione cual ha jugado -->
+            <div id="divListaJuegosAnime">
+                <p>De la siguiente lista seleciona el que hayas jugado</p>
+                <select name="" id="listaDeJuegosAnime">
+                    <option value="gi">Genshin Impact</option>
+                    <option value="hsr">Honkay Star Rail</option>
+                    <option value="zzz">Zenless Zone Zero</option>
+                    <option value="wuwa">Wuthering Waves</option>
+                    <option value="nikke">Nikke</option>
+                    <option value="tof">Tower of Fantasy</option>
+                    <option value="pgr">Punishing Gray Ravens</option>
+                    <option value="7ds">7DS Grand Cross</option>
+                    <option value="soloLeveling">Solo Leveling: Arise</option>
+                    <option value="otro">Otro</option>
+                </select>
+                <br>
+                <!-- En caso de seleccionar otro se va a abrir esta textarea para que ponga el nombre del otro que ha jugado -->
+                <textarea rows ="1" cols ="60" placeholder ="Cual?"></textarea>
+            </div>
+           </div>
+           <br>
+           <div id="divSubmit">
+            <input type="submit" id="botonSubmit" value= "Enviar">
+           </div>
+        </form>
+        <footer>Made by @Eddymanuel98 <a href="AQUI VA EL LINK">Github</a> <a href="AQUI VA EL LINK">X</a></footer>
+    </body>
+</html>

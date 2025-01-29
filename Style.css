@@ -1,0 +1,11 @@
+body{
+    background-image:url(./images/Fondo\ engranajes.jpg);
+    background-size:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+}
+select{
+    width:30%;
+}
