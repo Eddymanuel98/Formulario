@@ -1,6 +1,10 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
 body{
-    background-image:url(./images/Fondo\ engranajes.jpg);
+    background-repeat:no-repeat;
+    background-color: #d6dbdf;
     background-size:100%;
+    font-family: "Libre Franklin", serif;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -8,4 +12,58 @@ body{
 }
 select{
     width:30%;
+}
+header{
+    background-color: rgba(10, 46, 85, 0.664);
+    border-radius:10px;
+    width:50%;
+    text-align:center;
+    margin: 10px auto;
+}
+#inputsLabels{
+    display:grid;
+    grid-template-columns: 15% 40%;
+}
+button{
+    border: solid 1px black;
+    background-color:#63778a;
+    display:block;
+    margin:20px auto;
+    border-radius: 7px;
+}
+Button:hover{
+    background-color:#1a5276;
+    transition: all 0.5s ease;
+    border: solid 1px #1a5276 ;
+    color:#d6dbdf;
+}
+form{
+    background-color: rgba(44, 62, 80, 25%);
+    border-radius:10px;
+    margin:10px auto;
+}
+div{
+    margin:10px 25px;
+}
+a{
+    cursor:pointer;
+}   
+a:link{
+    color:blue;
+}
+a:visited{
+    color:purple;
+}
+a:hover{
+    color:red;
+}
+a:active{
+    color:yellow;
+}
+footer{
+    background-color: rgba(7, 36, 66, 0.664);
+    border-radius:10px;
+    width:50%;
+    text-align:center;
+    color:#d6dbdf;
 }

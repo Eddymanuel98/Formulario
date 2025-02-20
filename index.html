@@ -8,32 +8,34 @@
         <link rel ="stylesheet" href ="./Style.css">
     </head>
     <body>
-        <h1>Encuesta al Usuario</h1>
+        <header>
+           <h1>Encuesta al Usuario</h1> 
+        </header>
+        
         <form id ="Formulario" action ="/sumit-url" method ="post">
-            <div id="datosPersonales">
+            <div id="divDatosPersonales">
                 <h3>Ingresa tus datos personales</h3>
+                <div id="inputsLabels">
                 <label for ="Name">Nombres:</label>
                 <input required type ="text" id ="Name">
-                <br>
+                
                 <label for ="Apellidos">Apellidos:</label>
                 <input required type ="text" id ="Apellidos">
-                <br>
+                
                 <label for ="Edad">Edad:</label>
                 <input required type ="number" id ="Edad" min ="18" max ="90" placeholder ="18-90">
-                <br>
                 <label for ="Genero">Genero:</label>
                 <select name ="Genero" id ="Genero">
                     <option value ="Masculino">Masculino</option>
                     <option value ="Femenino">Femenino</option>
                     <option value ="Otro">Otro</option>
                 </select>
-                <br>
                 <label for ="Correo">Correo:</label>
                 <input required type ="email" id="Correo" placeholder= ="ejemplo@gmail.com">
-                <br>
                 <label for ="Telefono">Telefono:</label>
                 <input required type ="number" id ="Telefono" placeholder= ="+55(11)123456789">
-                <br>
+                </div>
+
                 <p>Acepta usted que sus datos sean utilizados por terceros?</p>
                 <input type ="radio" id ="siAcepta" name ="aceptar" checked>
                 <label for ="siAcepta">Si</label>
@@ -165,17 +167,18 @@
            </div>
            <br>
            <div id="divJuegosAnime">
-            <h3>Has jugado algun juego con tematica anime?</h3>
-            <input type="radio" id="siAnime" name="anime">
-            <label for="siAnime">Si</label>
-            <br>
-            <input type="radio" id="noAnime" name="anime" checked>
-            <label for="noAnime">No</label>
-            <br>
+            <div id="divPreguntaAnime">
+                <h3>Has jugado algun juego con tematica anime?</h3>
+                <input type="radio" id="siAnime" name="anime" value="siAnime">
+                <label for="siAnime">Si</label>
+                <br>
+                <input type="radio" id="noAnime" name="anime" value="noAnime" checked>
+                <label for="noAnime">No</label>
+            </div>
             <!-- En caso de responder que si se desoculta este div para que seleccione cual ha jugado -->
             <div id="divListaJuegosAnime">
                 <p>De la siguiente lista seleciona el que hayas jugado</p>
-                <select name="" id="listaDeJuegosAnime">
+                <select name="" id="selectListaDeJuegosAnime">
                     <option value="gi">Genshin Impact</option>
                     <option value="hsr">Honkay Star Rail</option>
                     <option value="zzz">Zenless Zone Zero</option>
@@ -187,14 +190,12 @@
                     <option value="soloLeveling">Solo Leveling: Arise</option>
                     <option value="otro">Otro</option>
                 </select>
-                <br>
                 <!-- En caso de seleccionar otro se va a abrir esta textarea para que ponga el nombre del otro que ha jugado -->
-                <textarea rows ="1" cols ="60" placeholder ="Cual?"></textarea>
+                <textarea id="textarea" rows ="1" cols ="60" placeholder ="Cual?"></textarea>
             </div>
-           </div>
-           <br>
-           <div id="divSubmit">
-            <button type="submit" id="botonSubmit">Enviar</button>
+                <div id="divSubmit">
+                    <button type="submit" id="botonSubmit">Enviar</button>
+               </div>
            </div>
         </form>
         <footer>Made by @Eddymanuel98 <a target="_blank" href="https://github.com/Eddymanuel98">Github</a> <a target="_blank" href="https://x.com/Eddymanuel98">Twitter/X</a></footer>
