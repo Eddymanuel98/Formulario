@@ -13,7 +13,7 @@
         </header>
         
         <form id ="Formulario" action ="/sumit-url" method ="post">
-            <div id="divDatosPersonales">
+            <section id="sectionDatosPersonales">
                 <h3>Ingresa tus datos personales</h3>
                 <div id="inputsLabels">
                 <label for ="Name">Nombres:</label>
@@ -35,20 +35,18 @@
                 <label for ="Telefono">Telefono:</label>
                 <input required type ="number" id ="Telefono" placeholder= ="+55(11)123456789">
                 </div>
-
                 <p>Acepta usted que sus datos sean utilizados por terceros?</p>
                 <input type ="radio" id ="siAcepta" name ="aceptar" checked>
                 <label for ="siAcepta">Si</label>
                 <br>
                 <input type ="radio" id ="noAcepta" name ="aceptar">
                 <label for ="noAcepta">No</label>
-                <br>
                 <p>Terminos y condiciones</p>
                 <input required type ="checkbox" id ="Terminos">
                 <label for ="Terminos">Al seleccionar esta casilla estas de acuerdo con nuestros <a href ="AQUI VA EL LINK">terminos y condiciones</a></label>
                 <button type="button" id ="botonSiguiente1">Siguiente</button>
-            </div>
-           <div id="divUltimosJuegosJugados">
+            </section>
+           <section id="sectionUltimosJuegosJugados">
              <h3>Selecciona de la siguiente lista los juegos que hayas jugado</h3>
              <ol id="listaDeUltimosJuegosJugados">
                 <li id="juego1">
@@ -93,9 +91,8 @@
                 </li>
              </ol>
              <button type="button" id ="botonSiguiente2">Siguiente</button>
-           </div>
-           <br>
-           <div id="divJuegosQuePlaneesJugar">
+            </section>
+           <section id="sectionJuegosQuePlaneesJugar">
              <h3>Selecciona de la siguiente lista los juegos que tengas planeado jugar en el futuro</h3>
              <ol id="listaDeUltimosJuegosJugados">
                 <li id="juego1">
@@ -140,9 +137,8 @@
                 </li>
              </ol>
              <button type="button" id ="botonSiguiente3">Siguiente</button>
-           </div>
-           <br>
-           <div id="divJuegoFavorito">
+            </section>
+           <section id="sectionJuegoFavorito">
                 <h3>Selecciona, de los juegos que hayas jugado, tu favorito</h3>
                 <fieldset>   
                     <legend>Selecciona</legend>
@@ -164,9 +160,8 @@
                 </fieldset> 
                 <br>
                 <button type="button" id ="botonSiguiente4">Siguiente</button>
-           </div>
-           <br>
-           <div id="divJuegosAnime">
+           </section>
+           <section id="sectionJuegosAnime">
             <div id="divPreguntaAnime">
                 <h3>Has jugado algun juego con tematica anime?</h3>
                 <input type="radio" id="siAnime" name="anime" value="siAnime">
@@ -179,7 +174,6 @@
             <div id="divListaJuegosAnime">
                 <p>De la siguiente lista seleciona el que hayas jugado</p>
                 <select name="" id="selectListaDeJuegosAnime">
-                    <option value="gi">Genshin Impact</option>
                     <option value="hsr">Honkay Star Rail</option>
                     <option value="zzz">Zenless Zone Zero</option>
                     <option value="wuwa">Wuthering Waves</option>
@@ -188,16 +182,22 @@
                     <option value="pgr">Punishing Gray Ravens</option>
                     <option value="7ds">7DS Grand Cross</option>
                     <option value="soloLeveling">Solo Leveling: Arise</option>
+                    <option value="gi">Genshin Impact</option>
                     <option value="otro">Otro</option>
                 </select>
                 <!-- En caso de seleccionar otro se va a abrir esta textarea para que ponga el nombre del otro que ha jugado -->
                 <textarea id="textarea" rows ="1" cols ="60" placeholder ="Cual?"></textarea>
             </div>
                 <div id="divSubmit">
-                    <button type="submit" id="botonSubmit">Enviar</button>
+                    <button type="submit" id="botonSubmit">Finalizar</button>
                </div>
-           </div>
+           </section>
         </form>
-        <footer>Made by @Eddymanuel98 <a target="_blank" href="https://github.com/Eddymanuel98">Github</a> <a target="_blank" href="https://x.com/Eddymanuel98">Twitter/X</a></footer>
+        <footer>Made by @Eddymanuel98 
+            <a target="_blank" href="https://github.com/Eddymanuel98">Github</a> 
+            <a target="_blank" href="https://x.com/Eddymanuel98">Twitter/X</a>
+            <a target="_blank" href="https://wa.me/+5511968115393"" >Whatsapp</a>
+            <a target="_blank" href="mailto:eddyfernandezrecio@gmail.com">Envíame un Correo</a>
+        </footer>
     </body>
 </html>

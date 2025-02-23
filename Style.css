@@ -31,18 +31,19 @@ button{
     margin:20px auto;
     border-radius: 7px;
 }
-Button:hover{
+button:hover{
     background-color:#1a5276;
     transition: all 0.5s ease;
     border: solid 1px #1a5276 ;
     color:#d6dbdf;
+    box-shadow: 5px 5px 10px 0px rgb(6, 5, 32);
 }
 form{
     background-color: rgba(44, 62, 80, 25%);
     border-radius:10px;
     margin:10px auto;
 }
-div{
+section{
     margin:10px 25px;
 }
 a{
