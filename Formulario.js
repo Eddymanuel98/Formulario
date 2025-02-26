@@ -68,5 +68,4 @@ function siguiente(evento){
         }
     }
 }
-
 window.addEventListener("load", iniciarFormulario)
