@@ -6,13 +6,18 @@
         <title>Encuesta al Usuario</title>
         <script src ="./Formulario.js"></script>
         <link rel ="stylesheet" href ="./Style.css">
+        <link rel="icon" type="image/jpg" href="./images/Icon.jpg">
     </head>
     <body>
-        <header>
-           <h1>Encuesta al Usuario</h1> 
-        </header>
+        <div id="imagenLateral">
+            <img id="imagenGaming" alt="Controllers img" src="./images/Fondo Gaming.jpg">
+        </div>
+        
         
         <form id ="Formulario" action ="/sumit-url" method ="post">
+            <header>
+                <h1>Encuesta al Usuario</h1> 
+             </header>
             <section id="sectionDatosPersonales">
                 <h3>Ingresa tus datos personales</h3>
                 <div id="inputsLabels">
@@ -192,12 +197,13 @@
                     <button type="submit" id="botonSubmit">Finalizar</button>
                </div>
            </section>
-        </form>
-        <footer>Made by @Eddymanuel98 
+           <footer>Made by @Eddymanuel98 
             <a target="_blank" href="https://github.com/Eddymanuel98">Github</a> 
             <a target="_blank" href="https://x.com/Eddymanuel98">Twitter/X</a>
             <a target="_blank" href="https://wa.me/+5511968115393"" >Whatsapp</a>
             <a target="_blank" href="mailto:eddyfernandezrecio@gmail.com">Envíame un Correo</a>
         </footer>
+        </form>
+        
     </body>
 </html>
